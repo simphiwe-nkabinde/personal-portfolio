@@ -77,6 +77,15 @@ nav ul li a:after {
     margin: 0;
     opacity: 0;
 }
+.active-link {
+    background: -webkit-linear-gradient(#f06449, #ef3636);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.active-link:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+}
 nav ul li a:hover {
   z-index: 1;
   color: white;
@@ -116,7 +125,7 @@ nav ul li a:hover:after {
         display: block;
         border-radius: 9px;
         opacity: 1;
-        background-color: rgb(201, 201, 201);
+        background: linear-gradient(to right,#f06449 0%, #f12424 100%); //rgb(201, 201, 201);
         margin: 9px 0;
     }
 }
@@ -164,7 +173,7 @@ width: 70%;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #f06449;
+    color: #ee5637;
   }
   
   .overlay .closebtn {
@@ -289,6 +298,7 @@ canvas {
     padding: 15px;
     border-radius: 5px;
     margin: 50px 0;
+    box-shadow: #9e9e9e 0px 0px 15px 0px;
     h3 {
         color: white;
         font-size: 2rem;
@@ -361,4 +371,66 @@ footer {
     text-align: center;
     margin: 20px 0;
     color: #a5a5a5;
+}
+
+
+// -----------------------LIBRARY PAGE------------------------------------------------
+
+#library-head {
+    height: 15%;
+}
+.library {
+    background: #252525;
+    background: linear-gradient(to bottom, #242429 0%, #3f3f3f 100%);
+    color: white;
+    padding: 20px 5%;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #ee5637;
+}
+.book-group {
+    h3 {
+        font-size: 1.5rem;
+        font-family: 'Spartan', sans-serif;
+    }
+    p {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.book-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    li {
+        margin: 20px 5%;
+        
+        
+    }
+    img {
+        height: 250px;
+        border-radius: 10px;
+    }
+
+
+}
+.book-list img:hover {
+    box-shadow: #0e314d 0px 0px 15px 0px;
+    // height: 251px;
+    transition: .5s;
+}
+@media only screen and (max-width: 800px) {
+    .book-list img {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .book-list img {
+        height: 170px;
+    }
+    .book-group h3 {
+        font-size: 1.2rem;
+    }
 }
