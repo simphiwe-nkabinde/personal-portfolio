@@ -374,7 +374,6 @@ canvas {
   margin-right: 10px;
   border: 1px solid #f06449;
   border-radius: 10px;
-  padding: 10px;
 }
 
 .latest-item .content .text {
@@ -485,8 +484,9 @@ footer {
 }
 
 .book-list img:hover {
-  -webkit-box-shadow: #0e314d 0px 0px 15px 0px;
-          box-shadow: #0e314d 0px 0px 15px 0px;
+  -webkit-box-shadow: #0e314d 0px 0px 15px 3px;
+          box-shadow: #0e314d 0px 0px 15px 3px;
+  border-radius: 3px;
   -webkit-transition: .5s;
   transition: .5s;
 }

@@ -314,7 +314,6 @@ canvas {
             margin-right: 10px;
             border: 1px solid #f06449;
             border-radius: 10px;
-            padding: 10px;
         }
         .text {
             width: 70%;
@@ -411,13 +410,14 @@ footer {
     img {
         height: 250px;
         border-radius: 10px;
+        // box-shadow: #0e314d 0px 0px 15px 0px;
     }
 
 
 }
 .book-list img:hover {
-    box-shadow: #0e314d 0px 0px 15px 0px;
-    // height: 251px;
+    box-shadow: #0e314d 0px 0px 15px 3px;
+    border-radius: 3px;
     transition: .5s;
 }
 @media only screen and (max-width: 800px) {
