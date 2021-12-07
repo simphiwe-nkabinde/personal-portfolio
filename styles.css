@@ -17,6 +17,10 @@ font-family: 'Spartan', sans-serif;
   height: 100vh;
 }
 
+.intro-sect {
+  height: 40vh;
+}
+
 header {
   margin: 50px 10px;
   display: -ms-grid;
@@ -271,6 +275,15 @@ nav ul li a:hover:after {
   height: 35px;
 }
 
+.projects-intro {
+  height: 70vh;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  background-position-x: 50%;
+  background-size: 150px;
+}
+
 .social-links svg:hover {
   fill: #0185ddb6;
   -webkit-transition: .5s;
@@ -295,6 +308,9 @@ nav ul li a:hover:after {
   .landing-intro p {
     font-size: 1.5rem;
     margin-top: 50px;
+  }
+  .intro-sect {
+    height: 10vh;
   }
 }
 
