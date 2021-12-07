@@ -1,3 +1,5 @@
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
