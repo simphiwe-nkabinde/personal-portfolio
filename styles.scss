@@ -177,57 +177,64 @@ width: 70%;
     top: 0px;
     width: 40%;
 }
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to top right, #3399ff 0%, #6600ff 100%);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    // font-family: 'Roboto', sans-serif;
-    font-family: 'Spartan', sans-serif;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #ee5637;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  @media screen and (max-height: 450px) {
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background: linear-gradient(to top right, #3399ff 0%, #6600ff 100%);
+overflow-x: hidden;
+transition: 0.5s;
+}
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+// font-family: 'Roboto', sans-serif;
+font-family: 'Spartan', sans-serif;
+margin-top: 30px;
+}
+
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: white;
+display: block;
+transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: #ee5637;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
     }
-  }
+}
 
+.d-none {
+    display: none;
+}
+.project-info-container {
+    overflow-y: scroll;
+    height: 16rem;
+}
 .landing-intro {
     height: 70vh;
     z-index: 10;
@@ -339,19 +346,9 @@ canvas {
     -webkit-text-fill-color: transparent;
 }
 
-.latest-sect {
+main {
     margin-top: 50px;
     padding: 25px 5%;
-    
-    h1 {
-        text-align: center;
-        font-size: 4rem;
-        font-family: 'Spartan', sans-serif;
-        font-weight: 700;
-        background: -webkit-linear-gradient(#f06449, #ef3636);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
 .latest-item {
     background: linear-gradient(to top right, #51a6fc 0%, #8656ce 100%);
