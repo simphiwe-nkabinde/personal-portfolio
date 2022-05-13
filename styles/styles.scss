@@ -115,11 +115,11 @@ nav ul li a:after {
 }
 .active-link {
     background: -webkit-linear-gradient(#f06449, #ef3636);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .active-link:hover {
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: white;
 }
 nav ul li a:hover {
@@ -134,7 +134,7 @@ nav ul li a:hover:after {
     opacity: 1;
 }
 
-@-webkit-keyframes fill {
+@keyframes fill {
     0% {
       width: 0%;
       height: 1px;
@@ -276,10 +276,6 @@ font-size: 60px;
     background-position-y: 25%;
     background-position-x: 50%;
     background-size: 150px;
-
-    .heading {
-        
-    }
 }
 .social-links svg:hover {
     fill: #0185ddb6;
@@ -342,7 +338,7 @@ canvas {
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     background: -webkit-linear-gradient(#f06449, #ef3636);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
