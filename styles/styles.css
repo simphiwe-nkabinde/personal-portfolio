@@ -362,7 +362,7 @@ nav ul li a:hover:after {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   background: -webkit-gradient(linear, left bottom, right top, from(#3399ff), to(#6600ff));
@@ -712,5 +712,13 @@ footer {
   .book-group h3 {
     font-size: 1.2rem;
   }
+}
+
+#contact-form {
+  max-width: 30rem;
+}
+
+#contact-form input, #contact-form textarea {
+  border-radius: 0px;
 }
 /*# sourceMappingURL=styles.css.map */

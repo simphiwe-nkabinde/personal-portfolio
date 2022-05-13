@@ -181,7 +181,7 @@ width: 70%;
 height: 100%;
 width: 0;
 position: fixed;
-z-index: 1;
+z-index: 5;
 top: 0;
 left: 0;
 background: linear-gradient(to top right, #3399ff 0%, #6600ff 100%);
@@ -490,5 +490,12 @@ footer {
     }
     .book-group h3 {
         font-size: 1.2rem;
+    }
+}
+
+#contact-form {
+    max-width: 30rem;
+    input, textarea {
+        border-radius: 0px;
     }
 }
