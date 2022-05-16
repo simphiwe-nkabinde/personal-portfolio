@@ -115,6 +115,7 @@ nav ul li a:after {
 .active-link {
     background: -webkit-linear-gradient(#f06449, #ef3636);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .active-link:hover {
@@ -338,6 +339,8 @@ canvas {
     font-weight: 700;
     background: -webkit-linear-gradient(#f06449, #ef3636);
     background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
