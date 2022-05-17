@@ -497,3 +497,13 @@ footer {
         border-radius: 0px;
     }
 }
+
+// --------------------------------
+.pixel {
+    position: absolute;
+    // background: red;
+    color: red;
+    font-size: 2rem;
+    text-shadow: 7px 0px 3px #1042ab;
+    transition: 5s;
+}

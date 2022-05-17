@@ -613,4 +613,13 @@ footer {
 #contact-form input, #contact-form textarea {
   border-radius: 0px;
 }
+
+.pixel {
+  position: absolute;
+  color: red;
+  font-size: 2rem;
+  text-shadow: 7px 0px 3px #1042ab;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
 /*# sourceMappingURL=styles.css.map */
