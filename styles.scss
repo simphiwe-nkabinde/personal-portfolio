@@ -245,7 +245,7 @@ font-size: 60px;
 .landing-intro {
     height: 70vh;
     z-index: 10;
-    background-image: url('img/logotest2.png');
+    background-image: url('images/logotest2.png');
     display: grid;
     grid-template-columns: 50% auto;
     background-repeat: no-repeat;
@@ -333,13 +333,71 @@ font-size: 60px;
         display: block;
     }
 }
+.slideFromRight {
+    animation: slideFromRight;
+    animation-direction: forwards;
+    animation-duration: 1s;
+}
+@keyframes slideFromRight {
+    0% {
+        opacity: 0.1;
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+.slideFromLeft {
+    animation: slideFromLeft;
+    animation-direction: forwards;
+    animation-duration: 1s;
+}
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0.1;
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+//---------------------------------------------
+#logo {
+    animation: logoRotate;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes logoRotate {
+    0% {
+        transform: rotate3d(1, 0, 0, 0deg);
+    }
+    25% {
+        transform: rotate3d(1, .5, 0, 90deg);
+    }
+    50% {
+        transform: rotate3d(1, .5, 0, 180deg);
+    }
+    75% {
+        transform: rotate3d(0, .5, 1, 270deg);
+    }
+    100% {
+        transform: rotate3d(0, .5, 1, 360deg);
+    }
+}
+
 //--------------------------------
 #secondary-header nav ul li {
     transform: translateY(-10px);
     opacity: 0;
 }
 //LI 1
-#secondary-header nav ul li:nth-child(1) {
+#secondary-header nav ul li:nth-child(1), #primary-header nav ul li:nth-child(1) {
     animation: dropfade1 1s forwards;
 }
 @keyframes dropfade1 {
@@ -349,7 +407,7 @@ font-size: 60px;
     }
 }
 //LI 2
-#secondary-header nav ul li:nth-child(2) {
+#secondary-header nav ul li:nth-child(2), #primary-header nav ul li:nth-child(2) {
     animation: dropfade2 1.5s forwards;
 }
 @keyframes dropfade2 {
@@ -358,7 +416,7 @@ font-size: 60px;
         opacity: 1;
     }
 }//LI 3
-#secondary-header nav ul li:nth-child(3) {
+#secondary-header nav ul li:nth-child(3), #primary-header nav ul li:nth-child(3) {
     animation: dropfade3 2s forwards;
 }
 @keyframes dropfade3 {
