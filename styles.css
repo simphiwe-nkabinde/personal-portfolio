@@ -429,12 +429,8 @@ nav ul li a:hover:after {
 }
 
 .slideFromRight {
-  -webkit-animation: slideFromRight;
-          animation: slideFromRight;
-  -webkit-animation-direction: forwards;
-          animation-direction: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation: slideFromRight 1s forwards;
+          animation: slideFromRight 1s forwards;
 }
 
 @-webkit-keyframes slideFromRight {
@@ -464,12 +460,8 @@ nav ul li a:hover:after {
 }
 
 .slideFromLeft {
-  -webkit-animation: slideFromLeft;
-          animation: slideFromLeft;
-  -webkit-animation-direction: forwards;
-          animation-direction: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation: slideFromLeft 1s forwards;
+          animation: slideFromLeft 1s forwards;
 }
 
 @-webkit-keyframes slideFromLeft {
@@ -499,14 +491,10 @@ nav ul li a:hover:after {
 }
 
 #logo {
-  -webkit-animation: logoRotate;
-          animation: logoRotate;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation: logoRotate 10s forwards;
+          animation: logoRotate 10s forwards;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }

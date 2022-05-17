@@ -334,9 +334,7 @@ font-size: 60px;
     }
 }
 .slideFromRight {
-    animation: slideFromRight;
-    animation-direction: forwards;
-    animation-duration: 1s;
+    animation: slideFromRight 1s forwards;
 }
 @keyframes slideFromRight {
     0% {
@@ -347,13 +345,10 @@ font-size: 60px;
         transform: translateX(0px);
         opacity: 1;
     }
-
 }
 
 .slideFromLeft {
-    animation: slideFromLeft;
-    animation-direction: forwards;
-    animation-duration: 1s;
+    animation: slideFromLeft 1s forwards;
 }
 @keyframes slideFromLeft {
     0% {
@@ -367,10 +362,8 @@ font-size: 60px;
 }
 //---------------------------------------------
 #logo {
-    animation: logoRotate;
-    animation-duration: 10s;
+    animation: logoRotate 10s forwards;
     animation-delay: 2s;
-    animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
 @keyframes logoRotate {
