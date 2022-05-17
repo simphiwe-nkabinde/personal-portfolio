@@ -1,4 +1,26 @@
+//SCROLL CHANGE on header
 
+const header = document.getElementById('secondary-header')
+
+window.onscroll = ()=> {changeHeaderStyle()}
+
+function changeHeaderStyle() {
+    if (document.documentElement.scrollTop > 1) {
+        header.style.background = "#b5b7c1";
+        header.style.boxShadow = "0 0 200px white inset";
+    } else {
+        header.style.backgroundColor = "";
+        header.style.boxShadow = "none";
+    }
+}
+
+// onlaod animations
+
+
+
+
+//------------------------------------------------------------
+/*
 const pixelLIst = ['.', '--', '<', '\\', '|', '>', '/',]
 var pixelCharIndex = 0
 function incrementPixelCharCount() {
@@ -69,3 +91,4 @@ function createTrailPixel(x, y) {
 setInterval(() => {
     randomAnimation(document.getElementById('landing-sect'))
 }, 1000);
+*/
