@@ -321,7 +321,6 @@ nav ul li a:hover:after {
 }
 
 .landing-intro {
-  height: 70vh;
   z-index: 10;
   background-image: url("images/logotest2.png");
   display: -ms-grid;
