@@ -10,14 +10,26 @@ font-family: 'Spartan', sans-serif;
 .highlight1 {
     color: #3399ff;
 }
-.bg-dark {
+.page-dark {
     background-color: #2b2b2c;
     color: lightgray;
 }
-.landing-sect {
-    color: white;
+.page-light {
+    background-color: white;
+    color: #2b2b2c;
+}
+.index-dark {
     background: #2b2b2c;
     box-shadow: 0 0 200px #1c1d25 inset;
+    color: white;
+}
+.index-light {
+        background: white;
+        box-shadow: 0 0 200px #ffffff inset;
+        color: #2b2b2c
+}
+.landing-sect {
+    @extend .index-dark;
     padding: 15px;
     height: 100vh;
 }
@@ -419,6 +431,20 @@ font-size: 60px;
     }
 }
 //---------------------
+.gradient-text {
+    background: -webkit-linear-gradient(#f06449, #ef3636);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-text-blue {
+    background: -webkit-linear-gradient(#4991f0, #e036ef);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 .gradient-title {
     text-align: center;
     // font-size: 4rem;
