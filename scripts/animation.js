@@ -67,5 +67,5 @@ function createTrailPixel(x, y) {
 }
 
 setInterval(() => {
-    randomAnimation(document.getElementById('body'))
+    randomAnimation(document.getElementById('landing-sect'))
 }, 1000);
