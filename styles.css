@@ -278,8 +278,8 @@ nav ul li a:hover:after {
   z-index: 5;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left bottom, right top, from(#3399ff), to(#6600ff));
-  background: linear-gradient(to top right, #3399ff 0%, #6600ff 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#3399ff9c), to(#6600ffa8));
+  background: linear-gradient(to top right, #3399ff9c 0%, #6600ffa8 100%);
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
