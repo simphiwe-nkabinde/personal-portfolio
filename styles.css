@@ -19,11 +19,19 @@ font-family: 'Spartan', sans-serif;
   color: lightgray;
 }
 
+.theme-dark .social-links svg {
+  fill: #a5a5a5;
+}
+
 .theme-light {
   background-color: white !important;
   -webkit-box-shadow: 0 0 200px #dddddd inset !important;
           box-shadow: 0 0 200px #dddddd inset !important;
   color: #2b2b2c !important;
+}
+
+.theme-light .social-links svg {
+  fill: #2b2b2c;
 }
 
 .index-dark {
@@ -372,7 +380,6 @@ nav ul li a:hover:after {
   width: 30px;
   height: 30px;
   margin-top: 20px;
-  fill: #a5a5a5;
 }
 
 .landing-intro .social-links #codepen-logo, .landing-intro .social-links circle {
@@ -509,10 +516,11 @@ nav ul li a:hover:after {
 }
 
 #logo {
-  -webkit-animation: logoRotate 10s forwards;
-          animation: logoRotate 10s forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  text-shadow: 2px 2px 2px white;
+  -webkit-animation: logoRotate 25s forwards;
+          animation: logoRotate 25s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
@@ -522,21 +530,25 @@ nav ul li a:hover:after {
     -webkit-transform: rotate3d(1, 0, 0, 0deg);
             transform: rotate3d(1, 0, 0, 0deg);
   }
-  25% {
+  10% {
     -webkit-transform: rotate3d(1, 0.5, 0, 90deg);
             transform: rotate3d(1, 0.5, 0, 90deg);
   }
-  50% {
+  15% {
     -webkit-transform: rotate3d(1, 0.5, 0, 180deg);
             transform: rotate3d(1, 0.5, 0, 180deg);
   }
-  75% {
+  20% {
     -webkit-transform: rotate3d(0, 0.5, 1, 270deg);
             transform: rotate3d(0, 0.5, 1, 270deg);
   }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
   100% {
-    -webkit-transform: rotate3d(0, 0.5, 1, 360deg);
-            transform: rotate3d(0, 0.5, 1, 360deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
@@ -545,21 +557,25 @@ nav ul li a:hover:after {
     -webkit-transform: rotate3d(1, 0, 0, 0deg);
             transform: rotate3d(1, 0, 0, 0deg);
   }
-  25% {
+  10% {
     -webkit-transform: rotate3d(1, 0.5, 0, 90deg);
             transform: rotate3d(1, 0.5, 0, 90deg);
   }
-  50% {
+  15% {
     -webkit-transform: rotate3d(1, 0.5, 0, 180deg);
             transform: rotate3d(1, 0.5, 0, 180deg);
   }
-  75% {
+  20% {
     -webkit-transform: rotate3d(0, 0.5, 1, 270deg);
             transform: rotate3d(0, 0.5, 1, 270deg);
   }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
   100% {
-    -webkit-transform: rotate3d(0, 0.5, 1, 360deg);
-            transform: rotate3d(0, 0.5, 1, 360deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 

@@ -14,11 +14,35 @@ function changeHeaderStyle() {
     }
 }
 
-// DArk/light Theme toggle
+//Dark/light THEME TOGGLE
+var darkIcon = document.getElementById('dark-theme-icon');
+var lightIcon = document.getElementById('light-theme-icon');
+
+if (JSON.parse(sessionStorage.theme_light) == true) {
+    document.querySelector('body').className = 'theme-light'
+    darkIcon.style.display = 'inline';
+    lightIcon.style.display = 'none';
+}
+else {
+    sessionStorage.theme_light = 'false';
+    document.querySelector('body').className = 'theme-dark'
+    darkIcon.style.display = 'none';
+    lightIcon.style.display = 'inline';
+}
 
 function themeToggle() {
-    // document.querySelector('body').classList.toggle('theme-dark');
-    document.querySelector('body').classList.toggle('theme-light');
+    let theme = document.querySelector('body').className;
+    if (theme == 'theme-light') {
+        document.querySelector('body').className = 'theme-dark';
+        sessionStorage.theme_light = 'false';
+        darkIcon.style.display = 'none';
+        lightIcon.style.display = 'inline';
+    } else {
+        document.querySelector('body').className = 'theme-light'
+        sessionStorage.theme_light = 'true';
+        darkIcon.style.display = 'inline';
+        lightIcon.style.display = 'none';
+    }
 }
 
 

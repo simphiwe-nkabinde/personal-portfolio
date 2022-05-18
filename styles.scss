@@ -14,11 +14,17 @@ font-family: 'Spartan', sans-serif;
     background-color: #2b2b2c;
     box-shadow: 0 0 200px #1c1d25 inset;
     color: lightgray;
+    .social-links svg {
+        fill: #a5a5a5;
+    }
 }
 .theme-light {
     background-color: white !important;
     box-shadow: 0 0 200px #dddddd inset !important;
     color: #2b2b2c !important;
+    .social-links svg {
+        fill: #2b2b2c;
+    }
 }
 .index-dark {
     background: #2b2b2c;
@@ -280,8 +286,6 @@ font-size: 60px;
             width: 30px;
             height: 30px;
             margin-top: 20px;
-            fill: #a5a5a5;
-            // stroke: #a5a5a5;
         }
         #codepen-logo, circle {
             fill: none;
@@ -377,25 +381,29 @@ font-size: 60px;
 }
 //---------------------------------------------
 #logo {
-    animation: logoRotate 10s forwards;
-    animation-delay: 2s;
+    text-shadow: 2px 2px 2px white;
+    animation: logoRotate 25s forwards;
+    animation-delay: 1s;
     animation-timing-function: ease-in-out;
 }
 @keyframes logoRotate {
     0% {
         transform: rotate3d(1, 0, 0, 0deg);
     }
-    25% {
+    10% {
         transform: rotate3d(1, .5, 0, 90deg);
     }
-    50% {
+    15% {
         transform: rotate3d(1, .5, 0, 180deg);
     }
-    75% {
+    20% {
         transform: rotate3d(0, .5, 1, 270deg);
     }
+    25% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
     100% {
-        transform: rotate3d(0, .5, 1, 360deg);
+        transform: rotateY(360deg);
     }
 }
 
