@@ -2,7 +2,7 @@
 
 const header = document.getElementById('secondary-header')
 
-window.onscroll = ()=> {changeHeaderStyle()}
+// window.onscroll = ()=> {changeHeaderStyle()}
 
 function changeHeaderStyle() {
     if (document.documentElement.scrollTop > 1) {

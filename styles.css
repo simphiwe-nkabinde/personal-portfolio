@@ -34,6 +34,11 @@ font-family: 'Spartan', sans-serif;
   fill: #2b2b2c;
 }
 
+.theme-light .hr-bottom-shadow {
+  -webkit-box-shadow: 0px 3px 10px 1px #2b2b2c;
+          box-shadow: 0px 3px 10px 1px #2b2b2c;
+}
+
 .index-dark {
   background: #2b2b2c;
   -webkit-box-shadow: 0 0 200px #1c1d25 inset;
@@ -102,14 +107,6 @@ font-family: 'Spartan', sans-serif;
   height: 50px;
   -ms-grid-column-align: center;
       justify-self: center;
-}
-
-.hr-bottom-shadow {
-  margin: 0;
-  -webkit-box-shadow: 0px 3px 10px 1px #2b2b2c;
-          box-shadow: 0px 3px 10px 1px #2b2b2c;
-  border: none;
-  color: #2b2b2c;
 }
 
 #primary-header {
@@ -516,7 +513,6 @@ nav ul li a:hover:after {
 }
 
 #logo {
-  text-shadow: 2px 2px 2px white;
   -webkit-animation: logoRotate 25s forwards;
           animation: logoRotate 25s forwards;
   -webkit-animation-delay: 1s;
