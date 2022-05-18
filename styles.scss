@@ -340,9 +340,6 @@ font-size: 60px;
     .landing-intro {
         grid-template-columns: 80% auto;
     }
-    .landing-intro p {
-        // font-size: 1.4rem;
-    }
     header {
         margin-top: 5px;
     }
@@ -354,6 +351,7 @@ font-size: 60px;
         display: block;
     }
 }
+//----------SILDE ANIMATIONS---------------------
 .slideFromRight {
     animation: slideFromRight 1s forwards;
 }
@@ -379,6 +377,32 @@ font-size: 60px;
     100% {
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+.slideFromTop {
+    animation: slideFromTop 1s forwards;
+}
+@keyframes slideFromTop {
+    0% {
+        opacity: 0.1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.slideFromBottom {
+    animation: slideFromBottom 1s forwards;
+}
+@keyframes slideFromBottom {
+    0% {
+        opacity: 0.1;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 //---------------------------------------------
@@ -469,22 +493,9 @@ font-size: 60px;
     -webkit-text-fill-color: transparent;
     @extend .slideFromTop;
 }
-.slideFromTop {
-    animation: slideFromTop 1s forwards;
-}
-@keyframes slideFromTop {
-    0% {
-        opacity: 0.1;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 //---------------------------
 main {
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 25px 5%;
 }
 .latest-item {
@@ -540,6 +551,26 @@ main {
         width: 100%;
     }
 }
+
+.theme-btn-container {
+    @extend .slideFromRight;
+    padding: 0 5%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    svg {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px; 
+    }
+}
+#dark-theme-icon {
+    fill: #252525;
+}
+#light-theme-icon {
+    fill: #a5a5a5;
+}
+
 .social-bottom {
     margin-top: 10px;
     justify-content: center;
