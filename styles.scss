@@ -10,13 +10,15 @@ font-family: 'Spartan', sans-serif;
 .highlight1 {
     color: #3399ff;
 }
-.page-dark {
+.theme-dark {
     background-color: #2b2b2c;
+    box-shadow: 0 0 200px #1c1d25 inset;
     color: lightgray;
 }
-.page-light {
-    background-color: white;
-    color: #2b2b2c;
+.theme-light {
+    background-color: white !important;
+    box-shadow: 0 0 200px #dddddd inset !important;
+    color: #2b2b2c !important;
 }
 .index-dark {
     background: #2b2b2c;
@@ -29,7 +31,7 @@ font-family: 'Spartan', sans-serif;
         color: #2b2b2c
 }
 .landing-sect {
-    @extend .index-dark;
+    // @extend .index-dark;
     padding: 15px;
     height: 100vh;
 }

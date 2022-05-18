@@ -14,7 +14,12 @@ function changeHeaderStyle() {
     }
 }
 
-// onlaod animations
+// DArk/light Theme toggle
+
+function themeToggle() {
+    // document.querySelector('body').classList.toggle('theme-dark');
+    document.querySelector('body').classList.toggle('theme-light');
+}
 
 
 
