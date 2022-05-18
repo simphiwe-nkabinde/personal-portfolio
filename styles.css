@@ -34,11 +34,6 @@ font-family: 'Spartan', sans-serif;
   fill: #2b2b2c;
 }
 
-.theme-light .hr-bottom-shadow {
-  -webkit-box-shadow: 0px 3px 10px 1px #2b2b2c;
-          box-shadow: 0px 3px 10px 1px #2b2b2c;
-}
-
 .index-dark {
   background: #2b2b2c;
   -webkit-box-shadow: 0 0 200px #1c1d25 inset;
@@ -110,7 +105,7 @@ font-family: 'Spartan', sans-serif;
 }
 
 #primary-header {
-  margin: 50px 10px;
+  margin: 10px 10px 40px 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (auto)[2];
@@ -159,6 +154,7 @@ font-family: 'Spartan', sans-serif;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 2rem;
+  margin: 1rem 0;
 }
 
 #primary-header nav ul li a {
@@ -362,6 +358,11 @@ nav ul li a:hover:after {
   font-family: 'spartan', sans-serif;
 }
 
+.landing-intro p:nth-of-type(2) {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
 .landing-intro .social-links {
   justify-self: end;
   display: -webkit-box;
@@ -418,7 +419,10 @@ nav ul li a:hover:after {
   }
   .landing-intro p {
     font-size: 1.5rem;
-    margin-top: 50px;
+  }
+  .landing-intro p:nth-of-type(2) {
+    font-size: .8rem;
+    overflow-y: scroll;
   }
   .intro-sect {
     height: 10vh;
@@ -433,9 +437,6 @@ nav ul li a:hover:after {
   .landing-intro {
     -ms-grid-columns: 80% auto;
         grid-template-columns: 80% auto;
-  }
-  .landing-intro p {
-    font-size: 1.4rem;
   }
   header {
     margin-top: 5px;

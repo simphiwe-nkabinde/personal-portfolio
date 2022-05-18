@@ -25,9 +25,6 @@ font-family: 'Spartan', sans-serif;
     .social-links svg {
         fill: #2b2b2c;
     }
-    .hr-bottom-shadow {
-        box-shadow: 0px 3px 10px 1px #2b2b2c;
-    }
 }
 .index-dark {
     background: #2b2b2c;
@@ -79,7 +76,7 @@ font-family: 'Spartan', sans-serif;
 }
 
 #primary-header {
-    margin: 50px 10px;
+    margin: 10px 10px 40px 10px;
     display: grid;
     grid-template-rows: repeat(2, auto);
     a, img {
@@ -110,6 +107,7 @@ font-family: 'Spartan', sans-serif;
         display: flex;
         justify-content: space-evenly;
         font-size: 2rem;
+        margin: 1rem 0;
 
         li a {
                 color: rgb(179, 179, 179);
@@ -273,7 +271,10 @@ font-size: 60px;
     p {
         font-size: 1.8rem;
         font-family: 'spartan', sans-serif;
-        // width: 50%;
+    }
+    p:nth-of-type(2) {
+        font-size: 1.3rem;
+        line-height: 1.6;
     }
     .social-links {
         justify-self: end;
@@ -320,7 +321,10 @@ font-size: 60px;
         grid-template-columns: 70% auto;
         p {
         font-size: 1.5rem;
-        margin-top: 50px;
+        }
+        p:nth-of-type(2) {
+            font-size: .8rem;
+             overflow-y: scroll;
         }
     }
     .intro-sect {
@@ -336,7 +340,7 @@ font-size: 60px;
         grid-template-columns: 80% auto;
     }
     .landing-intro p {
-        font-size: 1.4rem;
+        // font-size: 1.4rem;
     }
     header {
         margin-top: 5px;
