@@ -421,7 +421,7 @@ nav ul li a:hover:after {
     font-size: 1.5rem;
   }
   .landing-intro p:nth-of-type(2) {
-    font-size: .8rem;
+    font-size: 2.5vh;
     overflow-y: scroll;
   }
   .intro-sect {
