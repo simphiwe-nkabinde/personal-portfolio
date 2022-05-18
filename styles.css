@@ -240,6 +240,7 @@ nav ul li a:hover:after {
 }
 
 .menuBtn {
+  font-size: 30px;
   width: 60px;
   height: 45px;
   cursor: pointer;
@@ -663,6 +664,7 @@ nav ul li a:hover:after {
 
 .gradient-title {
   text-align: center;
+  font-size: 4rem;
   font-family: 'Spartan', sans-serif;
   font-weight: 700;
   background: -webkit-linear-gradient(#f06449, #ef3636);
@@ -670,29 +672,36 @@ nav ul li a:hover:after {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: grow 1s forwards;
-          animation: grow 1s forwards;
 }
 
-@-webkit-keyframes grow {
+.slideFromTop, .gradient-title {
+  -webkit-animation: slideFromTop 1s forwards;
+          animation: slideFromTop 1s forwards;
+}
+
+@-webkit-keyframes slideFromTop {
   0% {
-    font-size: 3.8rem;
-    opacity: 0.5;
+    opacity: 0.1;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   100% {
-    font-size: 4rem;
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
-@keyframes grow {
+@keyframes slideFromTop {
   0% {
-    font-size: 3.8rem;
-    opacity: 0.5;
+    opacity: 0.1;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   100% {
-    font-size: 4rem;
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 

@@ -172,6 +172,7 @@ nav ul li a:hover:after {
 }
 //SIDE PANEL MENU
 .menuBtn {
+    font-size:30px;
     width: 60px;
     height: 45px;
     cursor: pointer;
@@ -458,7 +459,7 @@ font-size: 60px;
 }
 .gradient-title {
     text-align: center;
-    // font-size: 4rem;
+    font-size: 4rem;
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     background: -webkit-linear-gradient(#f06449, #ef3636);
@@ -466,18 +467,20 @@ font-size: 60px;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    animation: grow 1s forwards;
+    @extend .slideFromTop;
 }
-@keyframes grow {
+.slideFromTop {
+    animation: slideFromTop 1s forwards;
+}
+@keyframes slideFromTop {
     0% {
-        font-size: 3.8rem;
-        opacity: 0.5;
+        opacity: 0.1;
+        transform: translateY(-30px);
     }
     100% {
-        font-size: 4rem;
         opacity: 1;
+        transform: translateY(0px);
     }
-    
 }
 //---------------------------
 main {
