@@ -1,12 +1,37 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
 body {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.skills-list {
+    li {
+        text-align: center;
+        margin: 0 2rem;
+        img {
+            width: 5rem;
+            filter: drop-shadow(5px 5px 6px #0c0c0c81);
+        }
+        p {
+            text-shadow: 2px 2px 6px #0c0c0c57;
+        }
+    }
+}
+.project-container {
+    h4 {
+        margin-bottom: 2rem;
+    }
+}
+.slide-carousel {
+    width: 10rem;
+}
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Spartan', sans-serif;
 */
+.muted-content {
+    color: grey;
+}
 .highlight1 {
     color: #3399ff;
 }
@@ -14,16 +39,30 @@ font-family: 'Spartan', sans-serif;
     background-color: #2b2b2c;
     box-shadow: 0 0 200px #1c1d25 inset;
     color: lightgray;
-    .social-links svg {
+    .social-links svg, .social-bottom svg {
         fill: #a5a5a5;
+    }
+    .project-container {
+        box-shadow: 1px 3px 10px 1px #0c0c0c91;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
 }
 .theme-light {
     background-color: white !important;
     box-shadow: 0 0 200px #dddddd inset !important;
     color: #2b2b2c !important;
-    .social-links svg {
+    .social-links svg, .social-bottom svg {
         fill: #2b2b2c;
+    }
+    .project-container {
+        box-shadow: 1px 3px 10px 1px #b4b4b491;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
 }
 .index-dark {
@@ -258,13 +297,17 @@ font-size: 60px;
 .project-info-container {
     overflow-y: scroll;
     height: 21rem;
+    padding-left: 15px;
 }
 .landing-intro {
     // height: 70vh;
     z-index: 10;
-    background-image: url('images/logotest2.png');
-    display: grid;
-    grid-template-columns: 50% auto;
+    // background-image: url('images/logotest2.png');
+    // display: grid;
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+    // grid-template-columns: 50% auto;
     background-repeat: no-repeat;
     background-position-y: 25%;
     background-position-x: 50%;
@@ -272,15 +315,18 @@ font-size: 60px;
     p {
         font-size: 1.8rem;
         font-family: 'spartan', sans-serif;
+        width: 50%;
     }
     p:nth-of-type(2) {
         font-size: 1.3rem;
         line-height: 1.6;
+        margin-left: auto;
     }
     .social-links {
         justify-self: end;
         display: flex;
         flex-direction: column;
+        margin-left: 10%;
         svg {
             width: 30px;
             height: 30px;
@@ -319,11 +365,16 @@ font-size: 60px;
         height: 80px;
     }
     .landing-intro {
-        grid-template-columns: 70% auto;
+        // grid-template-columns: 70% auto;
         p {
         font-size: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+        width: 80%;
+
         }
         p:nth-of-type(2) {
+            text-align: left;
             font-size: 2.5vh;
              overflow-y: scroll;
         }
@@ -338,7 +389,10 @@ font-size: 60px;
         display: none;
     }
     .landing-intro {
-        grid-template-columns: 80% auto;
+        // grid-template-columns: 80% auto;
+        p {
+            width: 100%;
+        }
     }
     header {
         margin-top: 5px;
@@ -349,6 +403,13 @@ font-size: 60px;
     }
     .menuBtn {
         display: block;
+    }
+    .skills-list {
+        li {
+            img {
+                width: 2rem;
+            }
+        }
     }
 }
 //----------SILDE ANIMATIONS---------------------
@@ -407,9 +468,12 @@ font-size: 60px;
 }
 //---------------------------------------------
 #logo {
-    animation: logoRotate 25s forwards;
+    animation: logoRotate 20s forwards;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
+}
+.spinAnimation {
+    animation: logoRotate 20s forwards;
 }
 @keyframes logoRotate {
     0% {
@@ -424,7 +488,7 @@ font-size: 60px;
     20% {
         transform: rotate3d(0, .5, 1, 270deg);
     }
-    25% {
+    50% {
         transform: rotate3d(0, 0, 0, 0deg);
     }
     100% {
@@ -594,7 +658,7 @@ main {
 }
 footer {
     text-align: center;
-    margin: 20px 0;
+    padding: 20px 0;
     color: #a5a5a5;
 }
 
@@ -677,3 +741,13 @@ footer {
     text-shadow: 7px 0px 3px #1042ab;
     transition: 5s;
 }
+
+
+
+/*
+IMPROVEMENTS TO MAKE
+
+project carousel:
+-order of importance: highlight headings, 
+
+*/

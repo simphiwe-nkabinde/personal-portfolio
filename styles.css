@@ -1,13 +1,41 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
 body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.skills-list li {
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.skills-list li img {
+  width: 5rem;
+  -webkit-filter: drop-shadow(5px 5px 6px #0c0c0c81);
+          filter: drop-shadow(5px 5px 6px #0c0c0c81);
+}
+
+.skills-list li p {
+  text-shadow: 2px 2px 6px #0c0c0c57;
+}
+
+.project-container h4 {
+  margin-bottom: 2rem;
+}
+
+.slide-carousel {
+  width: 10rem;
+}
+
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Spartan', sans-serif;
 */
+.muted-content {
+  color: grey;
+}
+
 .highlight1 {
   color: #3399ff;
 }
@@ -19,8 +47,17 @@ font-family: 'Spartan', sans-serif;
   color: lightgray;
 }
 
-.theme-dark .social-links svg {
+.theme-dark .social-links svg, .theme-dark .social-bottom svg {
   fill: #a5a5a5;
+}
+
+.theme-dark .project-container {
+  -webkit-box-shadow: 1px 3px 10px 1px #0c0c0c91;
+          box-shadow: 1px 3px 10px 1px #0c0c0c91;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .theme-light {
@@ -30,8 +67,17 @@ font-family: 'Spartan', sans-serif;
   color: #2b2b2c !important;
 }
 
-.theme-light .social-links svg {
+.theme-light .social-links svg, .theme-light .social-bottom svg {
   fill: #2b2b2c;
+}
+
+.theme-light .project-container {
+  -webkit-box-shadow: 1px 3px 10px 1px #b4b4b491;
+          box-shadow: 1px 3px 10px 1px #b4b4b491;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .index-dark {
@@ -339,15 +385,18 @@ nav ul li a:hover:after {
 .project-info-container {
   overflow-y: scroll;
   height: 21rem;
+  padding-left: 15px;
 }
 
 .landing-intro {
   z-index: 10;
-  background-image: url("images/logotest2.png");
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% auto;
-      grid-template-columns: 50% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 0;
   background-repeat: no-repeat;
   background-position-y: 25%;
   background-position-x: 50%;
@@ -357,11 +406,13 @@ nav ul li a:hover:after {
 .landing-intro p {
   font-size: 1.8rem;
   font-family: 'spartan', sans-serif;
+  width: 50%;
 }
 
 .landing-intro p:nth-of-type(2) {
   font-size: 1.3rem;
   line-height: 1.6;
+  margin-left: auto;
 }
 
 .landing-intro .social-links {
@@ -373,6 +424,7 @@ nav ul li a:hover:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 10%;
 }
 
 .landing-intro .social-links svg {
@@ -414,14 +466,14 @@ nav ul li a:hover:after {
   header a, header img {
     height: 80px;
   }
-  .landing-intro {
-    -ms-grid-columns: 70% auto;
-        grid-template-columns: 70% auto;
-  }
   .landing-intro p {
     font-size: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80%;
   }
   .landing-intro p:nth-of-type(2) {
+    text-align: left;
     font-size: 2.5vh;
     overflow-y: scroll;
   }
@@ -435,9 +487,8 @@ nav ul li a:hover:after {
   nav {
     display: none;
   }
-  .landing-intro {
-    -ms-grid-columns: 80% auto;
-        grid-template-columns: 80% auto;
+  .landing-intro p {
+    width: 100%;
   }
   header {
     margin-top: 5px;
@@ -449,6 +500,9 @@ nav ul li a:hover:after {
   }
   .menuBtn {
     display: block;
+  }
+  .skills-list li img {
+    width: 2rem;
   }
 }
 
@@ -577,12 +631,17 @@ nav ul li a:hover:after {
 }
 
 #logo {
-  -webkit-animation: logoRotate 25s forwards;
-          animation: logoRotate 25s forwards;
+  -webkit-animation: logoRotate 20s forwards;
+          animation: logoRotate 20s forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+}
+
+.spinAnimation {
+  -webkit-animation: logoRotate 20s forwards;
+          animation: logoRotate 20s forwards;
 }
 
 @-webkit-keyframes logoRotate {
@@ -602,7 +661,7 @@ nav ul li a:hover:after {
     -webkit-transform: rotate3d(0, 0.5, 1, 270deg);
             transform: rotate3d(0, 0.5, 1, 270deg);
   }
-  25% {
+  50% {
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
             transform: rotate3d(0, 0, 0, 0deg);
   }
@@ -629,7 +688,7 @@ nav ul li a:hover:after {
     -webkit-transform: rotate3d(0, 0.5, 1, 270deg);
             transform: rotate3d(0, 0.5, 1, 270deg);
   }
-  25% {
+  50% {
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
             transform: rotate3d(0, 0, 0, 0deg);
   }
@@ -858,7 +917,7 @@ main {
 
 footer {
   text-align: center;
-  margin: 20px 0;
+  padding: 20px 0;
   color: #a5a5a5;
 }
 
@@ -947,4 +1006,12 @@ footer {
   -webkit-transition: 5s;
   transition: 5s;
 }
+
+/*
+IMPROVEMENTS TO MAKE
+
+project carousel:
+-order of importance: highlight headings, 
+
+*/
 /*# sourceMappingURL=styles.css.map */
