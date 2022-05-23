@@ -781,7 +781,7 @@ body {
   content: '';
   position: absolute;
   width: 2px;
-  background: #f44336;
+  background: #f44336bd;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -830,7 +830,7 @@ body {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #f44336;
+  background: #f44336bd;
   z-index: 0;
   filter: drop-shadow(20px 20px 2px #00000080);
 }
@@ -889,7 +889,7 @@ body {
   padding: 30px;
 //   background: #F6D155;
   position: relative;
-  border: 2px solid #f44336;
+  border: 2px solid #f44336bd;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(5px);
@@ -960,7 +960,7 @@ body {
     right: auto;
     left: 0px;
     font-size: .7rem;
-    border: 1px solid red;
+    border: 1px solid #f44336bd;
     border-radius: 3px;
     padding: 4px;
     background-color: #f7f7f7;
