@@ -18,10 +18,10 @@ body {
         margin: 0 2rem;
         img {
             width: 5rem;
-            filter: drop-shadow(5px 5px 6px #0c0c0c81);
+            // filter: drop-shadow(5px 5px 6px #0c0c0c81);
         }
         p {
-            text-shadow: 2px 2px 6px #0c0c0c57;
+            // text-shadow: 2px 2px 6px #0c0c0c57;
         }
     }
 }
@@ -421,6 +421,8 @@ font-size: 60px;
     }
 }
 //----------SILDE ANIMATIONS---------------------
+.onscroll-fromLeft, .onscroll-fromRight, .onscroll-fromTop, .onscroll-fromBottom { visibility: hidden }
+
 .slideFromRight {
     animation: slideFromRight 1s forwards;
 }
@@ -772,7 +774,7 @@ body {
     padding: 15px 0;
     // box-shadow: inset 0px 0px 20px 7px #1f1f1f29;
     // overflow-y: scroll;
-    max-height: 500px;
+    max-height: 600px;
     // border: 1px solid #00000029;
     border-radius: 5px;
 }

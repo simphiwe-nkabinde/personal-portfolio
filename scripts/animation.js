@@ -2,6 +2,32 @@
 
 const header = document.getElementById('secondary-header')
 
+// SLIDE ANIMATIONS ONSCROLL
+slideAnimation('left');
+slideAnimation('right');
+slideAnimation('top');
+slideAnimation('bottom');
+
+function slideAnimation(fromDirection) {
+    fromDirection = capitalizeFirstLetter(fromDirection);
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecsting) {
+                entry.target.style.visibility = 'visible';
+                entry.target.classList.add(`slideFrom${fromDirection}`);
+            }
+        });
+    }, {threshold: 0.5})
+    document.querySelectorAll(`.onscroll-from${fromDirection}`).forEach(element => {
+        observer.observe(element);    
+    });    
+}
+
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 // window.onscroll = ()=> {changeHeaderStyle()}
 
 function changeHeaderStyle() {
@@ -14,7 +40,7 @@ function changeHeaderStyle() {
     }
 }
 
-//Dark/light THEME TOGGLE
+// DARK/LIGHT THEME TOGGLE
 var darkIcon = document.getElementById('dark-theme-icon');
 var lightIcon = document.getElementById('light-theme-icon');
 
@@ -44,80 +70,3 @@ function themeToggle() {
         lightIcon.style.display = 'none';
     }
 }
-
-
-
-
-//------------------------------------------------------------
-/*
-const pixelLIst = ['.', '--', '<', '\\', '|', '>', '/',]
-var pixelCharIndex = 0
-function incrementPixelCharCount() {
-    if(pixelCharIndex < (pixelLIst.length - 1)) {
-        pixelCharIndex++
-    } else {pixelCharIndex = 0}
-    return pixelCharIndex
-}
-
-function mouseTrail(event) {
-    const position = getMousePosition(event)
-    const pixel = createTrailPixel(position.x, position.y)
-    event.target.append(pixel)
-}
-
-function randomAnimation(element) {
-    const pos = randomPosition()
-    const pixel = createTrailPixel(pos.x, pos.y)
-    element.append(pixel)
-}
-
-function randomPosition() {
-    let xMax = window.screen.width;
-    let yMax = window.screen.height;
-    let min = 0;
-    const pos = {
-        x: Math.floor(Math.random() * (xMax - min + 1) + min),
-        y: Math.floor(Math.random() * (yMax - min + 1) + min)
-    }
-    return pos;
-}
-
-function getMousePosition(event) {
-    let pos = {
-        x: event.clientX,
-        y: event.clientY
-    }
-    return pos;
-}
-function destroyPixel(pixel) {
-    setTimeout(() => {
-        pixel.style.transform = 'rotate(100deg)'// scale(0.1,0.1) translate(-10px, 10px);';
-        // pixel.style.transform = '';
-        pixel.style.textShadow = 'none'
-        // pixel.style.display = 'none';
-        
-        setTimeout(() => {
-            
-            pixel.remove()
-        }, 5000); 
-    }, 500);
-    
-}
-function createTrailPixel(x, y) {
-    let pixel = document.createElement('span')
-    pixel.className = 'pixel';
-    pixel.innerText = pixelLIst[incrementPixelCharCount()]
-    // pixel.innerText = '/';
-    //set position
-    pixel.style.left = `${x}px`;
-    pixel.style.top = `${y}px`;
-
-    pixel.onload = destroyPixel(pixel)
-
-    return pixel
-}
-
-setInterval(() => {
-    randomAnimation(document.getElementById('landing-sect'))
-}, 1000);
-*/
