@@ -812,10 +812,11 @@ body {
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
-  background: #ffffff;
+//   background: #ffffff;
   border: 2px solid #006E51;
   border-radius: 16px;
   z-index: 1;
+  filter: drop-shadow(20px 20px 2px #00000080);
 }
 
 .event-container.right::after {
@@ -831,6 +832,7 @@ body {
   right: 8px;
   background: #f44336;
   z-index: 0;
+  filter: drop-shadow(20px 20px 2px #00000080);
 }
 
 .event-container.right::before {
@@ -961,7 +963,7 @@ body {
     border: 1px solid red;
     border-radius: 3px;
     padding: 4px;
-    background-color: white;
+    background-color: #f7f7f7;
   }
 
   .event-container.left .icon,
