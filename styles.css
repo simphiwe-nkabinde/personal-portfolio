@@ -17,12 +17,6 @@ body {
 
 .skills-list li img {
   width: 5rem;
-  -webkit-filter: drop-shadow(5px 5px 6px #0c0c0c81);
-          filter: drop-shadow(5px 5px 6px #0c0c0c81);
-}
-
-.skills-list li p {
-  text-shadow: 2px 2px 6px #0c0c0c57;
 }
 
 .project-container h4 {
@@ -509,6 +503,10 @@ nav ul li a:hover:after {
   .skills-list li img {
     width: 2rem;
   }
+}
+
+.onscroll-fromLeft, .onscroll-fromRight, .onscroll-fromTop, .onscroll-fromBottom {
+  visibility: hidden;
 }
 
 .slideFromRight, .skills-list li:nth-of-type(odd), .theme-btn-container {
@@ -1031,7 +1029,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 15px 0;
-  max-height: 500px;
+  max-height: 600px;
   border-radius: 5px;
 }
 
