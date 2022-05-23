@@ -12,7 +12,7 @@ function slideAnimation(fromDirection) {
     fromDirection = capitalizeFirstLetter(fromDirection);
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry) => {
-            if (entry.isIntersecsting) {
+            if (entry.isIntersecting) {
                 entry.target.style.visibility = 'visible';
                 entry.target.classList.add(`slideFrom${fromDirection}`);
             }
