@@ -15,10 +15,6 @@ body {
   margin: 0 2rem;
 }
 
-.skills-list li img {
-  width: 5rem;
-}
-
 .project-container h4 {
   margin-bottom: 2rem;
 }
@@ -27,10 +23,6 @@ body {
   width: 10rem;
 }
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Spartan', sans-serif;
-*/
 .muted-content {
   color: grey;
 }
@@ -149,38 +141,10 @@ font-family: 'Spartan', sans-serif;
       justify-self: center;
 }
 
-#primary-header {
-  margin: 10px 10px 40px 10px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
-}
-
-#primary-header a, #primary-header img {
-  height: 150px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#primary-header .title {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-}
-
-#primary-header .title h1 {
-  font-size: 3rem;
-  font-weight: 600;
+.title {
+  font-size: 4rem;
   font-family: 'Spartan', sans-serif;
   margin: 0;
-}
-
-#primary-header .title p {
-  font-family: 'Spartan', sans-serif;
 }
 
 /* NAV */
@@ -395,23 +359,17 @@ nav ul li a:hover:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5% 0;
+  margin: 15% 0;
   background-repeat: no-repeat;
   background-position-y: 25%;
   background-position-x: 50%;
   background-size: 150px;
 }
 
-.landing-intro p {
-  font-size: 1.8rem;
+.landing-intro .blurb {
+  font-size: 1rem;
   font-family: 'spartan', sans-serif;
-  width: 50%;
-}
-
-.landing-intro p:nth-of-type(2) {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-left: auto;
+  width: 60%;
 }
 
 .landing-intro .social-links {
@@ -465,17 +423,6 @@ nav ul li a:hover:after {
   header a, header img {
     height: 80px;
   }
-  .landing-intro p {
-    font-size: 1.5rem;
-    margin-left: 0;
-    margin-right: 0;
-    width: 80%;
-  }
-  .landing-intro p:nth-of-type(2) {
-    text-align: left;
-    font-size: 2.5vh;
-    overflow-y: scroll;
-  }
   .intro-sect {
     height: 10vh;
   }
@@ -486,7 +433,7 @@ nav ul li a:hover:after {
   nav {
     display: none;
   }
-  .landing-intro p {
+  .landing-intro .blurb {
     width: 100%;
   }
   header {
@@ -770,7 +717,7 @@ nav ul li a:hover:after {
   }
 }
 
-.gradient-text {
+.gradient-text, .title {
   background: -webkit-linear-gradient(#f06449, #ef3636);
   background-clip: text;
   -webkit-background-clip: text;
