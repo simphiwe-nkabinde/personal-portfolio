@@ -7,15 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="images/logotest2.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Simphiwe Nkabinde</title>
 </head>
-<body class="theme-dark">
-    <section id="landing-sect" class="landing-sect">
-        <header id="secondary-header">
-            <a href="index.html">
+
+<body class="theme-dark" id="top">
+    <header>
+        <div id="topNav">
+            <a href="#top" onclick="hideHeaderBg()">
                 <img id="logo" src="images/logotest2.png" alt="logo">
             </a>
             <span class="menuBtn slideFromRight" onclick="openNav()">
@@ -25,93 +31,280 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#about-sect" onclick="showHeaderBg()">About</a></li>
+                    <li><a href="#projects-sect" onclick="showHeaderBg()">Projects</a></li>
+                    <li><a href="#contact-sect" onclick="showHeaderBg()">Contact</a></li>
                 </ul>
-            </nav>                
-        </header>
+            </nav>
+        </div>
         <div id="sideNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="about.html">About</a>
-              <a href="projects.html">Projects</a>
-              <a href="contact.html">Contact</a>
+                <a href="#about-sect" onclick="closeNav()">About</a>
+                <a href="#projects-sect" onclick="closeNav()">Projects</a>
+                <a href="#contact-sect" onclick="closeNav()">Contact</a>
             </div>
         </div>
-
+    </header>
+    <section id="landing-sect" class="landing-sect">
         <div class="landing-intro">
             <div class="ms-md-5">
-                <p class="fs-2">H<span class="gradient-text-blue">i</span>, I<span class="gradient-text-blue">'</span>m</p>
+                <p class="fs-2">H<span class="gradient-text-blue">i</span>, I<span class="gradient-text-blue">'</span>m
+                </p>
                 <h1 class="gradient-text display-1 fw-bold slideFromLeft">Simphiwe Nkabinde</h1>
-                <h2 class="text-muted fw-bold">I build Full Stack Web Applications.</h2>
+                <h2 class="text-muted fw-bold">I build Web Applications.</h2>
                 <p class="slideFromBottom muted-content blurb">
-                    I enjoy solving problems and building solutions through my programming skills. I have developed skills in the JavaScript MEAN stack, SQL and python. 
-                    I'm an intern developer at the Digital Academy in Johannesburg <span class="d-none">and a BSc student at BYU-I majoring in web programming</span>. 
+                    I enjoy solving problems and building solutions through my programming skills. I enjoy working with
+                    JavaScript Technologies.
+                    I'm a junior developer at the Digital Academy in Johannesburg and a BSc
+                    student at BYU-I majoring in web programming.
                 </p>
             </div>
             <div class="social-links slideFromRight">
                 <a href="https://github.com/simphiwe-nkabinde" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                     </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/simphiwe-nkabinde-a07b311b9/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                     </svg>
                 </a>
                 <span onclick="themeToggle()" id="dark-theme-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-moon-fill" viewBox="0 0 16 16">
-                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                        <path
+                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
                     </svg>
                 </span>
                 <span onclick="themeToggle()" id="light-theme-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
-                        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                        <path
+                            d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
                     </svg>
                 </span>
             </div>
         </div>
     </section>
-<!-- 
+    <div id="about-sect" class="my-5">.</div>
+    <section class="container">
+        <h1 class="gradient-title">About</h1>
+        <div>
+            <h3 class="mt-5 mb-3 gradient-text">Skills</h3>
+            <ul class="skills-list list-unstyled d-flex flex-wrap justify-content-evenly">
+                <li>
+                    <img src="images/icons8-html-5.svg" alt="">
+                    <p>HTML 5</p>
+                </li>
+                <li>
+                    <img src="images/icons8-css3.svg" alt="">
+                    <p>CSS 3</p>
+                </li>
+                <li>
+                    <img src="images/icons8-javascript.svg" alt="">
+                    <p>JavaScript</p>
+                </li>
+                <li>
+                    <img src="images/icons8-bootstrap.svg" alt="">
+                    <p>Bootstrap</p>
+                </li>
+                <li>
+                    <img src="images/icons8-jquery.svg" alt="">
+                    <p>Jquery</p>
+                </li>
+                <li>
+                    <img src="images/icons8-reactjs.svg" alt="reactjs">
+                    <p>React</p>
+                </li>
+                <li>
+                    <img src="images/icons8-angularjs.svg" alt="">
+                    <p>Angular</p>
+                </li>
+                <li>
+                    <img src="images/icons8-git.svg" alt="">
+                    <p>Git</p>
+                </li>
+                <li>
+                    <img src="images/icons8-nodejs.svg" alt="">
+                    <p>NodeJs</p>
+                </li>
+                <li>
+                    <img src="images/expressjs-icon.svg" alt="">
+                    <p>ExpressJs</p>
+                </li>
+                <li>
+                    <img src="images/icons8-mongodb.svg" alt="">
+                    <p>MongoDb</p>
+                </li>
+                <li>
+                    <img src="images/icons8-postgresql.svg" alt="">
+                    <p>Postgresql</p>
+                </li>
+            </ul>
+
+            <h3 class="mt-5 gradient-text">Experience</h3>
+            <div class="timeline" id="timeline-wrapper">
+                <div class="event-container left">
+                    <div class="date onscroll-fromRight">Dec 2021</div>
+                    <div class="content onscroll-fromLeft">
+                        <h2>Web Developer Intern<a class="text-decoration-none"
+                                href="https://www.thedigitalacademy.co.za/"> @The Digital Academy</a></h2>
+                        <ul>
+                            <li>Designed application UI & UX using Figma</li>
+                            <li>Developed backend server applications using NestJs & Express</li>
+                            <li>Built frontend applications with Angular</li>
+                            <li>Designed and created databases with MongoDb and Postgresql </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event-container right">
+                    <div class="date onscroll-fromLeft">Sep 2021</div>
+                    <div class="content onscroll-fromRight">
+                        <h2>Coding Mentor & Reviewer<a class="text-decoration-none" href="https://www.hyperiondev.com/">
+                                @HyperionDev</a></h2>
+                        <ul>
+                            <li>Review code submitted by software dev students</li>
+                            <li>Conduct synchronous code review sessions with students</li>
+                            <li>Help students understand programming concepts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="projects-sect" class="my-5">.</div>
+    <section>
+        <h1 class="gradient-title">Projects</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-75 mx-auto project-container">
+                        <h4>JavaScript Basics Tutorial</h4>
+                        <div class="d-block d-lg-flex">
+                            <div class="d-flex justify-content-center d-lg-block">
+                                <img class="d-none d-md-flex" src="images/jstutorial_lg.png" width="450">
+                                <img class="d-md-none" src="images/jstutorial1.png" width="200" alt="Flowers">
+                            </div>
+                            <div class="ms-2 mt-2 mt-md-0 small project-info-container">
+                                <p>
+                                    An interactive web tutorial of basic JavaScript Concepts. Learn basic JavaScript
+                                    concepts
+                                    and syntax, including JQuery. Each Section contains practical code examples and
+                                    exercises
+                                    at the end.
+                                </p>
+                                <p class="text-muted">
+                                </p>
+                                <div class="d-none d-md-flex flex-column">
+                                    <p class=" fw-bold m-0">Technologies:</p>
+                                    <ul class="mt-0 mb- list-unstyled flex-wrap">
+                                        <li class="mx-1">HTML</li>
+                                        <li class="mx-1">CSS</li>
+                                        <li class="mx-1">JavaScript</li>
+                                        <li class="mx-1">JQuery</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a class="btn btn-sm btn-outline-primary" target="_blank"
+                                        href="https://github.com/simphiwe-nkabinde/JS-tutorial">GitHub</a>
+                                    <a class="btn btn-sm btn-outline-success m-2" target="_blank"
+                                        href="https://simphiwe-nkabinde.github.io/JS-tutorial/">Live App<i
+                                            class="bi bi-arrow-right-short"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <div class="d-block w-75 mx-auto project-container">
+                        project 2
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-75 mx-auto project-container">
+                        project 3
+                    </div>
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <div id="contact-sect" class="">.</div>
+    <section>
+        <h3 class="gradient-title">Contact</h3>
+        <div class="container">
+            <p class="text-muted text-center onscroll-FromRight">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum illo commodi tempore, expedita
+                dolorem hic ullam fuga velit incidunt.
+            </p>
+            <form id="contact-form" class="row g-3 mx-auto onscroll-fromLeft">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-12">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn rounded-0 btn-primary">send message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="text-end me-5">
+        <a href="#top">
+            <i class="btn fs-2 shadow text-light bg-dark bi bi-arrow-up border btn btn-sm" onclick="hideHeaderBg()"></i>
+        </a>
+    </div>
+
     <div class="social-bottom">
         <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
             </svg>
         </a>
         <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
             </svg>
         </a>
         <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                <path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/>
-            </svg>
-        </a>
-        <a href="#">
-            <svg id="codepen-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 38" style="enable-background:new 0 0 36 36;" xml:space="preserve" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg id="codepen-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 38 38" style="enable-background:new 0 0 36 36;" xml:space="preserve"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="19" cy="19" r="17" stroke="a5a5a5" stroke-width="2" />
-                <path d="M8 22.7L19 30l11-7.3V15.3L19 8L8 15.3V22.7z M30 22.7L19 15.3l-11 7.4 M8 15.3l11 7.3 l11-7.3 M19 8v7.3 M19 22.7V30"/>  
+                <path
+                    d="M8 22.7L19 30l11-7.3V15.3L19 8L8 15.3V22.7z M30 22.7L19 15.3l-11 7.4 M8 15.3l11 7.3 l11-7.3 M19 8v7.3 M19 22.7V30" />
             </svg>
         </a>
     </div>
     <footer>
-        &copy; 2021 Simphiwe Nkabinde
+        &copy; 2022 Simphiwe Nkabinde
     </footer>
-     -->
-
-<script>
-    function openNav() {
-        document.getElementById("sideNav").style.width = "100%";
-    }
-    
-    function closeNav() {
-        document.getElementById("sideNav").style.width = "0%";
-    }
-</script>
-<script type="text/javascript" src="./scripts/animation.js"></script>
+    <script type="text/javascript" src="./scripts/animation.js"></script>
 </body>
+
 </html>

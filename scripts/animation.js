@@ -70,3 +70,20 @@ function themeToggle() {
         lightIcon.style.display = 'none';
     }
 }
+
+function openNav() {
+    document.getElementById("sideNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("sideNav").style.width = "0%";
+}
+
+function showHeaderBg() {
+    const header = document.querySelector('#topNav');
+    header.classList.add('headerBg');
+}
+function hideHeaderBg() {
+    const header = document.querySelector('#topNav');
+    header.classList.remove('headerBg')
+}
