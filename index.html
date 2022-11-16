@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>Simphiwe Nkabinde</title>
 </head>
 
@@ -344,24 +345,29 @@
                 Do you have an interesting idea or solution you want to build. Let's have a chat
             </p>
             <form id="contact-form" class="row g-3 mx-auto onscroll-fromLeft">
+                <input type="hidden" name="contact_number">
                 <div class="col-md-6">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="name" class="form-control" id="name">
+                    <label for="from_name" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name" name="from_name">
                 </div>
                 <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email">
+                    <label for="reply_to" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="reply_to">
                 </div>
                 <div class="col-12">
                     <label for="subject" class="form-label">Subject</label>
-                    <input type="text" class="form-control" id="subject" placeholder="">
+                    <input type="text" class="form-control" id="subject" placeholder="" name="subject">
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <textarea class="form-control" id="message" rows="3" name="message"></textarea>
                 </div>
+                <p class="text-danger" id="form-validation"></p>
                 <div class="col-12">
-                    <button type="submit" class="btn rounded-0 btn-primary">send message</button>
+                    <input type="submit" value="send message" id="form-btn" class="btn rounded-0 btn-primary">
+                    <div class="spinner-border align-middle" style="display: none;" id="form-spinner" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
                 </div>
             </form>
         </div>
@@ -399,6 +405,7 @@
         &copy; 2022 Simphiwe Nkabinde
     </footer>
     <script type="text/javascript" src="./scripts/animation.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

@@ -44,7 +44,7 @@ function changeHeaderStyle() {
 var darkIcon = document.getElementById('dark-theme-icon');
 var lightIcon = document.getElementById('light-theme-icon');
 
-if (JSON.parse(sessionStorage.theme_light) == true) {
+if (JSON.parse(sessionStorage.theme_light)) {
     document.querySelector('body').className = 'theme-light'
     darkIcon.style.display = 'inline';
     lightIcon.style.display = 'none';
