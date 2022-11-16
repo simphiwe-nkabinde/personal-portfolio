@@ -113,8 +113,10 @@ header {
         margin-top: 70px;
         margin-bottom: 70px;
     }
-    .carousel-control-prev, .carousel-control-prev {
+    .carousel-control-prev, .carousel-control-next {
         color: white;
+        z-index: 0;
+        font-size: 3rem;
     }
 }
 .theme-light {
@@ -140,9 +142,10 @@ header {
         margin-top: 70px;
         margin-bottom: 70px;
     }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
+    .carousel-control-prev, .carousel-control-next {
         color: black;
         font-size: 3rem;
+        z-index: 0;
     }
 }
 .title {
